@@ -1,4 +1,4 @@
-name: Main
+name: Say Hello Workflow
 on: [push]
 
 jobs:
@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Greeting Message
+      - name: Say hello
         run: echo "Hello, World!"
